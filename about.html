@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Plants vs Brainrots - Our Mission & Team | Gaming Excellence</title>
+    <meta name="description" content="Learn about our mission to bring the best Plants vs Brainrots gaming experience to players worldwide. Discover our team, values, and commitment to quality gaming entertainment.">
+    <meta name="keywords" content="about plants vs brainrots, gaming team, roblox gaming excellence, quality gaming experience, player focused gaming">
+    <meta name="author" content="Plants vs Brainrots Team">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="About Plants vs Brainrots - Our Mission & Team">
+    <meta property="og:description" content="Meet the team behind Plants vs Brainrots and learn about our mission to deliver exceptional gaming experiences.">
+    <meta property="og:url" content="https://plantsvsbrainrot.co/about">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://plantsvsbrainrot.co/images/about-og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About Plants vs Brainrots - Our Mission & Team">
+    <meta name="twitter:description" content="Meet the passionate team behind the most innovative Roblox tower defense game.">
+    <meta name="twitter:image" content="https://plantsvsbrainrot.co/images/about-twitter-card.jpg">
+    <link rel="canonical" href="https://plantsvsbrainrot.co/about">
+
+    <!-- Security Headers for Iframe Embedding -->
+    <meta http-equiv="X-Frame-Options" content="allowall">
+    <meta http-equiv="Content-Security-Policy" content="frame-ancestors *">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        /* 继承主页的赛博朋克风格 */
+        :root {
+            /* 主色调 */
+            --primary-cyber: #00E5FF;
+            --secondary-purple: #7C4DFF;
+            --accent-pink: #FF4081;
+            --neon-green: #76FF03;
+
+            /* 背景色系 */
+            --background-dark: #0A0E27;
+            --background-card: #151A3A;
+            --glass-effect: rgba(255, 255, 255, 0.05);
+            --gradient-cyber: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+            /* 文字色系 */
+            --text-primary: #FFFFFF;
+            --text-secondary: #B3E5FC;
+            --text-accent: #00E5FF;
+            --text-muted: #64B5F6;
+
+            /* 字体系统 */
+            --font-heading: 'Orbitron', 'Rajdhani', sans-serif;
+            --font-body: 'Exo 2', 'Roboto', sans-serif;
+            --font-cyber: 'Share Tech Mono', monospace;
+
+            /* 字体大小 */
+            --text-h1: 2.5rem;
+            --text-h2: 2rem;
+            --text-h3: 1.5rem;
+            --text-body: 1rem;
+            --text-code: 0.9rem;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@400;500;700;900&family=Rajdhani:wght@400;500;700&family=Share+Tech+Mono&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--background-dark);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* 背景效果 */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image:
+                linear-gradient(rgba(0, 229, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 229, 255, 0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* 导航栏 */
+        .nav {
+            background: linear-gradient(135deg, rgba(21, 26, 58, 0.9) 0%, rgba(10, 14, 39, 0.9) 100%);
+            backdrop-filter: blur(10px);
+            padding: 1.5rem 2rem;
+            border: 1px solid rgba(0, 229, 255, 0.3);
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow:
+                0 8px 32px rgba(0, 229, 255, 0.1),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .nav::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(0, 229, 255, 0.1), transparent);
+            animation: scan 3s infinite;
+        }
+
+        .logo {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: var(--primary-cyber);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
+        }
+
+        .logo::before {
+            content: '🌐';
+            font-size: 2rem;
+            filter: drop-shadow(0 0 10px rgba(0, 229, 255, 0.8));
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            font-family: var(--font-cyber);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--primary-cyber), var(--accent-pink));
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-cyber);
+            text-shadow: 0 0 10px rgba(0, 229, 255, 0.8);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* 页面标题 */
+        .page-title {
+            font-family: var(--font-heading);
+            font-size: var(--text-h1);
+            color: var(--primary-cyber);
+            text-align: center;
+            margin-bottom: 1rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow:
+                0 0 20px rgba(0, 229, 255, 0.8),
+                0 0 40px rgba(0, 229, 255, 0.4);
+        }
+
+        .page-subtitle {
+            font-family: var(--font-body);
+            font-size: var(--text-h3);
+            color: var(--text-secondary);
+            text-align: center;
+            margin-bottom: 3rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+            background: rgba(0, 229, 255, 0.05);
+            padding: 1rem 2rem;
+            border-radius: 15px;
+            border: 1px solid rgba(0, 229, 255, 0.2);
+        }
+
+        /* 任务声明区域 */
+        .mission-section {
+            background: linear-gradient(135deg, rgba(0, 229, 255, 0.05) 0%, rgba(124, 77, 255, 0.05) 100%);
+            border: 1px solid var(--primary-cyber);
+            border-radius: 16px;
+            padding: 3rem;
+            margin-bottom: 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .mission-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(0, 229, 255, 0.1) 0%, transparent 70%);
+            animation: rotate 20s linear infinite;
+        }
+
+        .mission-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .mission-title {
+            font-family: var(--font-heading);
+            font-size: var(--text-h2);
+            color: var(--primary-cyber);
+            margin-bottom: 1.5rem;
+            text-align: center;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 0 20px rgba(0, 229, 255, 0.6);
+        }
+
+        .mission-description {
+            font-size: var(--text-body);
+            color: var(--text-secondary);
+            line-height: 1.8;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* 价值观网格 */
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .value-card {
+            background: linear-gradient(135deg, rgba(21, 26, 58, 0.9) 0%, rgba(10, 14, 39, 0.9) 100%);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 229, 255, 0.3);
+            border-radius: 12px;
+            padding: 2rem;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .value-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(0, 229, 255, 0.1), transparent);
+            animation: scan 3s infinite;
+        }
+
+        .value-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(0, 229, 255, 0.6);
+            box-shadow:
+                0 15px 40px rgba(0, 229, 255, 0.2),
+                inset 0 1px 0 rgba(255, 255, 255, 0.2);
+        }
+
+        .value-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+            filter: drop-shadow(0 0 15px rgba(0, 229, 255, 0.6));
+        }
+
+        .value-title {
+            font-family: var(--font-heading);
+            font-size: var(--text-h3);
+            color: var(--primary-cyber);
+            margin-bottom: 1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
+        }
+
+        .value-description {
+            color: var(--text-secondary);
+            line-height: 1.7;
+            font-family: var(--font-body);
+        }
+
+        /* 团队区域 */
+        .team-section {
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-family: var(--font-heading);
+            font-size: var(--text-h2);
+            color: var(--primary-cyber);
+            text-align: center;
+            margin-bottom: 2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 0 20px rgba(0, 229, 255, 0.6);
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .team-member {
+            background: linear-gradient(135deg, rgba(21, 26, 58, 0.9) 0%, rgba(10, 14, 39, 0.9) 100%);
+            border: 1px solid rgba(0, 229, 255, 0.3);
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .team-member::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary-cyber), var(--accent-pink), var(--neon-green));
+            animation: gradient-flow 3s linear infinite;
+        }
+
+        .team-member:hover {
+            transform: translateY(-5px) rotateZ(-1deg);
+            border-color: rgba(0, 229, 255, 0.6);
+            box-shadow:
+                0 15px 40px rgba(0, 229, 255, 0.3),
+                inset 0 0 20px rgba(0, 229, 255, 0.1);
+        }
+
+        .member-avatar {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 1.5rem;
+            border-radius: 50%;
+            background: var(--gradient-cyber);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--text-primary);
+            position: relative;
+            box-shadow:
+                0 0 30px rgba(0, 229, 255, 0.5),
+                inset 0 0 20px rgba(255, 255, 255, 0.1);
+        }
+
+        .member-avatar::after {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, var(--primary-cyber), var(--accent-pink), var(--neon-green), var(--secondary-purple));
+            border-radius: 50%;
+            z-index: -1;
+            animation: border-rotate 3s linear infinite;
+        }
+
+        .member-name {
+            font-family: var(--font-heading);
+            font-size: var(--text-h3);
+            color: var(--primary-cyber);
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .member-role {
+            font-family: var(--font-cyber);
+            font-size: var(--text-code);
+            color: var(--accent-pink);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .member-bio {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            font-family: var(--font-body);
+            font-size: var(--text-body);
+        }
+
+        /* 选择理由区域 */
+        .reasons-section {
+            background: linear-gradient(135deg, rgba(124, 77, 255, 0.05) 0%, rgba(0, 229, 255, 0.05) 100%);
+            border: 1px solid var(--secondary-purple);
+            border-radius: 16px;
+            padding: 3rem;
+            margin-bottom: 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .reasons-section::before {
+            content: '';
+            position: absolute;
+            top: -100%;
+            left: -100%;
+            width: 300%;
+            height: 300%;
+            background: radial-gradient(circle, rgba(124, 77, 255, 0.1) 0%, transparent 70%);
+            animation: rotate 25s linear infinite reverse;
+        }
+
+        .reasons-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .reasons-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .reason-item {
+            background: rgba(10, 14, 39, 0.6);
+            border-left: 3px solid var(--neon-green);
+            padding: 1.5rem;
+            border-radius: 8px;
+            position: relative;
+            z-index: 1;
+            transition: all 0.3s ease;
+        }
+
+        .reason-item:hover {
+            transform: translateX(5px);
+            background: rgba(10, 14, 39, 0.8);
+            box-shadow: 0 0 20px rgba(118, 255, 3, 0.3);
+        }
+
+        .reason-item h4 {
+            font-family: var(--font-heading);
+            color: var(--neon-green);
+            margin-bottom: 1rem;
+            font-size: var(--text-h3);
+            font-weight: 600;
+        }
+
+        .reason-item p {
+            color: var(--text-secondary);
+            line-height: 1.7;
+            font-family: var(--font-body);
+        }
+
+        /* 服务承诺区域 */
+        .services-section {
+            margin-bottom: 3rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: linear-gradient(135deg, rgba(21, 26, 58, 0.9) 0%, rgba(10, 14, 39, 0.9) 100%);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 229, 255, 0.3);
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(0, 229, 255, 0.1), transparent);
+            animation: scan 3s infinite;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(0, 229, 255, 0.6);
+            box-shadow:
+                0 15px 40px rgba(0, 229, 255, 0.2),
+                inset 0 1px 0 rgba(255, 255, 255, 0.2);
+        }
+
+        .service-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            display: block;
+            filter: drop-shadow(0 0 10px rgba(0, 229, 255, 0.6));
+        }
+
+        .service-title {
+            font-family: var(--font-heading);
+            font-size: var(--text-h3);
+            color: var(--primary-cyber);
+            margin-bottom: 1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .service-description {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            font-family: var(--font-body);
+        }
+
+        /* CTA 区域 */
+        .cta-section {
+            text-align: center;
+            padding: 3rem 2rem;
+            background: linear-gradient(135deg, rgba(0, 229, 255, 0.05) 0%, rgba(124, 77, 255, 0.05) 100%);
+            border-radius: 20px;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 3rem;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(0, 229, 255, 0.1) 0%, transparent 70%);
+            animation: rotate 15s linear infinite;
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-title {
+            font-family: var(--font-heading);
+            font-size: var(--text-h1);
+            color: var(--primary-cyber);
+            margin-bottom: 1rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 0 30px rgba(0, 229, 255, 0.8);
+        }
+
+        .cta-description {
+            font-size: var(--text-body);
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.8;
+        }
+
+        .cyber-btn {
+            background: linear-gradient(135deg, var(--primary-cyber) 0%, var(--secondary-purple) 100%);
+            border: 2px solid transparent;
+            border-radius: 8px;
+            padding: 15px 30px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            text-decoration: none;
+            display: inline-block;
+            font-family: var(--font-heading);
+            color: var(--text-primary);
+            clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 50%, calc(100% - 10px) 100%, 0 100%);
+            margin: 0 0.5rem;
+        }
+
+        .cyber-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .cyber-btn:hover {
+            background: linear-gradient(135deg, var(--neon-green) 0%, var(--accent-pink) 100%);
+            box-shadow: 0 0 20px rgba(118, 255, 3, 0.5);
+            transform: scale(1.05) rotateZ(-1deg);
+        }
+
+        .cyber-btn:hover::before {
+            left: 100%;
+        }
+
+        /* 页脚 */
+        .footer {
+            background: linear-gradient(135deg, rgba(21, 26, 58, 0.9) 0%, rgba(10, 14, 39, 0.9) 100%);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 229, 255, 0.3);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-top: 4rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, var(--primary-cyber), var(--accent-pink), var(--neon-green), var(--secondary-purple));
+            border-radius: 16px;
+            z-index: -1;
+            animation: border-rotate 6s linear infinite;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: var(--primary-cyber);
+            text-decoration: none;
+            font-weight: 600;
+            font-family: var(--font-cyber);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .footer-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent-pink);
+            transition: width 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-pink);
+            text-shadow: 0 0 10px rgba(255, 64, 129, 0.8);
+        }
+
+        .footer-links a:hover::after {
+            width: 100%;
+        }
+
+        /* 返回首页链接 */
+        .back-link {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: linear-gradient(135deg, var(--primary-cyber) 0%, var(--secondary-purple) 100%);
+            color: var(--text-primary);
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-family: var(--font-heading);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            z-index: 1000;
+            box-shadow: 0 4px 15px rgba(0, 229, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 229, 255, 0.5);
+        }
+
+        /* 动画效果 */
+        @keyframes scan {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+
+        @keyframes border-rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes gradient-flow {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .nav {
+                padding: 1rem;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .nav-links {
+                justify-content: center;
+                gap: 1rem;
+            }
+
+            .page-title {
+                font-size: var(--text-h2);
+            }
+
+            .page-subtitle {
+                font-size: var(--text-body);
+                padding: 0.8rem 1.5rem;
+            }
+
+            .mission-section {
+                padding: 2rem 1.5rem;
+            }
+
+            .values-grid,
+            .team-grid,
+            .reasons-list,
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .back-link {
+                position: static;
+                display: block;
+                width: fit-content;
+                margin: 1rem auto;
+            }
+
+            .cyber-btn {
+                margin: 0.5rem;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-link">← Back to Home</a>
+
+    <div class="container">
+        <!-- Navigation Bar -->
+        <nav class="nav">
+            <div class="logo">Plants vs Brainrots</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" style="color: var(--primary-cyber);">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Page Title -->
+        <h1 class="page-title">🏢 About Us</h1>
+        <p class="page-subtitle">
+            Learn about our mission to bring the best Plants vs Brainrots gaming experience to players worldwide
+        </p>
+
+        <!-- Mission Statement -->
+        <section class="mission-section">
+            <div class="mission-content">
+                <h2 class="mission-title">🎯 Our Mission</h2>
+                <p class="mission-description">
+                    At plantsvsbrainrot.co, our mission goes far beyond simply hosting a game. We're dedicated to creating an ecosystem where **Plants vs Brainrots** players can access the best gaming experience, including comprehensive resources, community support, and a platform that respects the time and investment they pour into their beloved hobby. We believe a successful gaming platform must prioritize player experience above all else, ensuring every feature, resource, and support system serves to enhance your enjoyment and success.
+                </p>
+            </div>
+        </section>
+
+        <!-- Core Values -->
+        <section class="values-section">
+            <h2 class="section-title">💎 Core Values</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <span class="value-icon">👥</span>
+                    <h3 class="value-title">Player-First Philosophy</h3>
+                    <p class="value-description">
+                        Every decision we make begins with a single question: "How does this benefit **Plants vs Brainrots** players?" We believe a successful gaming platform must prioritize player experience above all else, ensuring every feature, resource, and support system serves to enhance your enjoyment and success.
+                    </p>
+                </div>
+
+                <div class="value-card">
+                    <span class="value-icon">🏆</span>
+                    <h3 class="value-title">Commitment to Quality</h3>
+                    <p class="value-description">
+                        The online gaming world is filled with mediocrity, but we refuse to accept this standard. Our commitment to excellence means carefully curated content, providing accurate and helpful information, and maintaining our platform at highest technical standards.
+                    </p>
+                </div>
+
+                <div class="value-card">
+                    <span class="value-icon">🚀</span>
+                    <h3 class="value-title">Innovation & Evolution</h3>
+                    <p class="value-description">
+                        Gaming is an ever-evolving medium, and we embrace this reality by constantly seeking to improve and expand our services. Whether it's new strategy guides, community features, or gaming innovations, we always keep an eye on the future for **Plants vs Brainrots** players.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Introduction -->
+        <section class="team-section">
+            <h2 class="section-title">👨‍💻 Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-avatar">🎮</div>
+                    <h3 class="member-name">Game Director</h3>
+                    <p class="member-role">Lead Game Designer</p>
+                    <p class="member-bio">
+                        Senior game designer with 10+ years of tower defense game development experience. Dedicated to creating engaging and challenging game mechanics.
+                    </p>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-avatar">🛠️</div>
+                    <h3 class="member-name">Technical Lead</h3>
+                    <p class="member-role">Tech Lead</p>
+                    <p class="member-bio">
+                        Full-stack development engineer focusing on game performance optimization and user experience improvements. Ensuring smooth platform operation across all devices.
+                    </p>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-avatar">🎨</div>
+                    <h3 class="member-name">Creative Director</h3>
+                    <p class="member-role">Creative Director</p>
+                    <p class="member-bio">
+                        Senior visual designer responsible for the game's art style and user experience design. Perfectly blending modern cyberpunk aesthetics with game mechanics.
+                    </p>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-avatar">📊</div>
+                    <h3 class="member-name">Community Manager</h3>
+                    <p class="member-role">Community Manager</p>
+                    <p class="member-bio">
+                        Passionate gamer and community builder responsible for maintaining active player community and timely response to user feedback and needs.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section class="reasons-section">
+            <div class="reasons-content">
+                <h2 class="section-title">🤔 Why Choose Plants vs Brainrots?</h2>
+                <div class="reasons-list">
+                    <div class="reason-item">
+                        <h4>🎮 Revolutionary Game Mechanics</h4>
+                        <p>
+                            **Plants vs Brainrots** represents the true evolution of the tower defense genre, combining strategic plant warfare with complex innovative economic and progression mechanics that reward both casual play and dedicated optimization.
+                        </p>
+                    </div>
+
+                    <div class="reason-item">
+                        <h4>⚖️ Perfect Balance of Accessibility & Complexity</h4>
+                        <p>
+                            Unlike many games that sacrifice depth for accessibility (or vice versa), **Plants vs Brainrots** provides incredibly approachable gameplay for newcomers while offering incredible strategic depth for experienced players.
+                        </p>
+                    </div>
+
+                    <div class="reason-item">
+                        <h4>👥 Community-Driven Development</h4>
+                        <p>
+                            The developers behind **Plants vs Brainrots** have proven their commitment to community feedback and continuous improvement, ensuring the game evolves according to player needs and preferences.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Services -->
+        <section class="services-section">
+            <h2 class="section-title">🛠️ Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <span class="service-icon">📚</span>
+                    <h3 class="service-title">Comprehensive Game Resources</h3>
+                    <p class="service-description">
+                        Access detailed guides, strategy analysis, and tips to help you master all aspects of **Plants vs Brainrots**, from basic plant placement to advanced fusion techniques.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <span class="service-icon">👥</span>
+                    <h3 class="service-title">Community Connection</h3>
+                    <p class="service-description">
+                        Join an active community of like-minded players who share your passion for the game. Whether you're looking for trading partners, strategy discussions, or want to share your latest achievements, you'll find your fellow enthusiasts here.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <span class="service-icon">⚡</span>
+                    <h3 class="service-title">Technical Excellence</h3>
+                    <p class="service-description">
+                        Our platform is built on cutting-edge technology, ensuring fast and reliable access to **Plants vs Brainrots** without encountering the technical issues that plague many gaming websites.
+                    </p>
+                </div>
+
+                <div class="service-card">
+                    <span class="service-icon">🎧</span>
+                    <h3 class="service-title">Player Support</h3>
+                    <p class="service-description">
+                        Need help or have questions? Our dedicated support team consists of experienced **Plants vs Brainrots** players who can provide expert assistance with any aspect of the game.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2 class="cta-title">🚀 Join Our Community</h2>
+                <p class="cta-description">
+                    Whether you're a newcomer to **Plants vs Brainrots** or an experienced player looking to optimize strategies, you'll find your home here. Explore our resources, connect with fellow players, and discover why so many people consider **Plants vs Brainrots** one of the most engaging games on the Roblox platform.
+                </p>
+                <div>
+                    <a href="play.html" class="cyber-btn">🎮 Play Now</a>
+                    <a href="contact.html" class="cyber-btn">📞 Contact Us</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-links">
+                <a href="index.html">🏠 Home</a>
+                <a href="play.html">🎮 Play Game</a>
+                <a href="about.html">ℹ️ About Us</a>
+                <a href="contact.html">📞 Contact</a>
+                <a href="https://discord.gg/plantsvsbrainrots">💬 Discord Community</a>
+            </div>
+            <div style="margin-top: 2rem; color: var(--text-muted); font-family: var(--font-cyber); font-size: var(--text-code);">
+                <p>© 2024 Plants vs Brainrots | Cyberpunk Tower Defense Game | All Rights Reserved</p>
+                <p style="margin-top: 0.5rem;">Last Updated: December 1, 2024 | Version: v2.1.0</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript Interactive Effects -->
+    <script>
+        // Page load animation
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.style.opacity = '0';
+            setTimeout(() => {
+                document.body.style.transition = 'opacity 0.5s ease-in';
+                document.body.style.opacity = '1';
+            }, 100);
+
+            // Add card hover effects enhancement
+            const cards = document.querySelectorAll('.value-card, .team-member, .service-card');
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-5px) scale(1.02)';
+                });
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0) scale(1)';
+                });
+            });
+
+            // Smooth scrolling
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+
+        // Remove parallax scrolling effects - all sections now remain fixed
+        // No sections should move with scroll for better user experience
+    </script>
+</body>
+</html>

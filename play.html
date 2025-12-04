@@ -1,0 +1,1375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plants vs Brainrots Game - Complete Strategy Guide & Tips | Roblox Tower Defense</title>
+    <meta name="description" content="Master Plants vs Brainrots with our comprehensive guide. Learn advanced strategies, plant placement tips, fusion mechanics, and how to maximize your earnings in this addictive Roblox tower defense game.">
+    <meta name="keywords" content="plants vs brainrots guide, roblox tower defense strategy, plants vs brainrots tips, brainrot fusion, rebirth system, plant placement strategy, roblox meme game">
+    <meta name="author" content="Plants vs Brainrots Team">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Play Plants vs Brainrots - Strategy Guide & Game">
+    <meta property="og:description" content="Master the ultimate Roblox tower defense game with comprehensive strategy guides, plant placement tips, and fusion mechanics.">
+    <meta property="og:url" content="https://plantsvsbrainrot.co/play">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://plantsvsbrainrot.co/images/play-og-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Play Plants vs Brainrots - Strategy Guide">
+    <meta name="twitter:description" content="Complete strategy guide for the most innovative Roblox tower defense game.">
+    <meta name="twitter:image" content="https://plantsvsbrainrot.co/images/play-twitter-card.jpg">
+    <link rel="canonical" href="https://plantsvsbrainrot.co/play">
+
+    <!-- Security Headers for Iframe Embedding -->
+    <meta http-equiv="X-Frame-Options" content="allowall">
+    <meta http-equiv="Content-Security-Policy" content="frame-ancestors *">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        /* 继承主页的赛博朋克风格 */
+        :root {
+            /* 主色调 */
+            --primary-cyber: #00E5FF;
+            --secondary-purple: #7C4DFF;
+            --accent-pink: #FF4081;
+            --neon-green: #76FF03;
+
+            /* 背景色系 */
+            --background-dark: #0A0E27;
+            --background-card: #151A3A;
+            --glass-effect: rgba(255, 255, 255, 0.05);
+            --gradient-cyber: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+            /* 文字色系 */
+            --text-primary: #FFFFFF;
+            --text-secondary: #B3E5FC;
+            --text-accent: #00E5FF;
+            --text-muted: #64B5F6;
+
+            /* 植物赛博化配色 */
+            --sunflower-cyber: #FFD700;
+            --cactus-tech: #00BCD4;
+            --strawberry-digital: #E91E63;
+            --dragonfruit-vr: #9C27B0;
+
+            /* Brainrot 数字化配色 */
+            --brainrot-meme: #FF00FF;
+            --brainrot-viral: #00FFFF;
+            --brainrot-trend: #FFFF00;
+            --brainrot-data: #FF1493;
+
+            /* 字体系统 */
+            --font-heading: 'Orbitron', 'Rajdhani', sans-serif;
+            --font-body: 'Exo 2', 'Roboto', sans-serif;
+            --font-cyber: 'Share Tech Mono', monospace;
+            --font-meme: 'Press Start 2P', cursive;
+
+            /* 字体大小 */
+            --text-h1: 2.5rem;
+            --text-h2: 2rem;
+            --text-h3: 1.5rem;
+            --text-body: 1rem;
+            --text-code: 0.9rem;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@400;500;700;900&family=Rajdhani:wght@400;500;700&family=Share+Tech+Mono&family=Press+Start+2P&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--background-dark);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* 背景效果 */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image:
+                linear-gradient(rgba(0, 229, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 229, 255, 0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* 导航栏 */
+        .nav {
+            background: linear-gradient(135deg, rgba(21, 26, 58, 0.9) 0%, rgba(10, 14, 39, 0.9) 100%);
+            backdrop-filter: blur(10px);
+            padding: 1.5rem 2rem;
+            border: 1px solid rgba(0, 229, 255, 0.3);
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow:
+                0 8px 32px rgba(0, 229, 255, 0.1),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .nav::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(0, 229, 255, 0.1), transparent);
+            animation: scan 3s infinite;
+        }
+
+        .logo {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: var(--primary-cyber);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
+        }
+
+        .logo::before {
+            content: '🌐';
+            font-size: 2rem;
+            filter: drop-shadow(0 0 10px rgba(0, 229, 255, 0.8));
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            font-family: var(--font-cyber);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--primary-cyber), var(--accent-pink));
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-cyber);
+            text-shadow: 0 0 10px rgba(0, 229, 255, 0.8);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* 标题 */
+        .page-title {
+            font-family: var(--font-heading);
+            font-size: var(--text-h1);
+            color: var(--primary-cyber);
+            text-align: center;
+            margin-bottom: 1rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow:
+                0 0 20px rgba(0, 229, 255, 0.8),
+                0 0 40px rgba(0, 229, 255, 0.4);
+        }
+
+        .page-subtitle {
+            font-family: var(--font-body);
+            font-size: var(--text-h3);
+            color: var(--text-secondary);
+            text-align: center;
+            margin-bottom: 3rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+            background: rgba(0, 229, 255, 0.05);
+            padding: 1rem 2rem;
+            border-radius: 15px;
+            border: 1px solid rgba(0, 229, 255, 0.2);
+        }
+
+        /* 游戏框架区域 */
+        .game-section {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .game-frame-container {
+            background: linear-gradient(135deg, var(--background-dark) 0%, #050714 100%);
+            border: 2px solid var(--primary-cyber);
+            border-radius: 16px;
+            padding: 1rem;
+            position: relative;
+            min-height: 600px;
+            overflow: hidden;
+            box-shadow:
+                0 20px 60px rgba(0, 229, 255, 0.2),
+                inset 0 0 60px rgba(0, 229, 255, 0.05);
+        }
+
+        .game-frame-container::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, var(--primary-cyber), var(--accent-pink), var(--neon-green), var(--secondary-purple));
+            border-radius: 16px;
+            z-index: -1;
+            animation: border-rotate 4s linear infinite;
+        }
+
+        .game-frame {
+            width: 100%;
+            height: 560px;
+            border: none;
+            border-radius: 12px;
+            background: #000;
+        }
+
+        .game-status {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: rgba(0, 229, 255, 0.2);
+            color: var(--text-primary);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-family: var(--font-cyber);
+            font-size: var(--text-code);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: 1px solid var(--primary-cyber);
+        }
+
+        .game-controls {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .cyber-card {
+            background: linear-gradient(135deg, rgba(21, 26, 58, 0.9) 0%, rgba(10, 14, 39, 0.9) 100%);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 229, 255, 0.3);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow:
+                0 8px 32px rgba(0, 229, 255, 0.1),
+                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .cyber-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(0, 229, 255, 0.1), transparent);
+            animation: scan 3s infinite;
+        }
+
+        .cyber-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(0, 229, 255, 0.6);
+            box-shadow:
+                0 15px 40px rgba(0, 229, 255, 0.2),
+                inset 0 1px 0 rgba(255, 255, 255, 0.2);
+        }
+
+        .cyber-card h3 {
+            font-family: var(--font-heading);
+            font-size: var(--text-h3);
+            color: var(--primary-cyber);
+            margin-bottom: 1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
+        }
+
+        .cyber-btn {
+            background: linear-gradient(135deg, var(--primary-cyber) 0%, var(--secondary-purple) 100%);
+            border: 2px solid transparent;
+            border-radius: 8px;
+            padding: 12px 24px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            text-decoration: none;
+            display: inline-block;
+            font-family: var(--font-heading);
+            color: var(--text-primary);
+            clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 50%, calc(100% - 10px) 100%, 0 100%);
+            width: 100%;
+            text-align: center;
+        }
+
+        .cyber-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .cyber-btn:hover {
+            background: linear-gradient(135deg, var(--neon-green) 0%, var(--accent-pink) 100%);
+            box-shadow: 0 0 20px rgba(118, 255, 3, 0.5);
+            transform: scale(1.05);
+        }
+
+        .cyber-btn:hover::before {
+            left: 100%;
+        }
+
+        /* 策略指南区域 */
+        .strategy-section {
+            margin-bottom: 3rem;
+        }
+
+        .strategy-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .strategy-card {
+            background: linear-gradient(135deg, rgba(21, 26, 58, 0.9) 0%, rgba(10, 14, 39, 0.9) 100%);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 229, 255, 0.3);
+            border-radius: 12px;
+            padding: 2rem;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .strategy-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary-cyber), var(--accent-pink), var(--neon-green));
+            animation: gradient-flow 3s linear infinite;
+        }
+
+        .strategy-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(0, 229, 255, 0.6);
+            box-shadow:
+                0 15px 40px rgba(0, 229, 255, 0.2),
+                inset 0 0 20px rgba(0, 229, 255, 0.1);
+        }
+
+        .strategy-card h4 {
+            font-family: var(--font-heading);
+            font-size: var(--text-h3);
+            color: var(--primary-cyber);
+            margin-bottom: 1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .strategy-card ul {
+            list-style: none;
+            color: var(--text-secondary);
+            font-family: var(--font-body);
+            line-height: 1.8;
+        }
+
+        .strategy-card li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .strategy-card li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: var(--primary-cyber);
+            font-weight: bold;
+        }
+
+        /* 植物数据库 */
+        .plants-section {
+            margin-bottom: 3rem;
+        }
+
+        .plants-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .plant-card {
+            background: linear-gradient(135deg, rgba(21, 26, 58, 0.9) 0%, rgba(10, 14, 39, 0.9) 100%);
+            border: 2px solid;
+            border-image: linear-gradient(135deg, var(--primary-cyber), var(--secondary-purple)) 1;
+            border-radius: 16px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .plant-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-cyber), var(--accent-pink), var(--neon-green));
+            animation: gradient-flow 3s linear infinite;
+        }
+
+        .plant-card:hover {
+            transform: translateY(-5px) rotateZ(-1deg);
+            box-shadow:
+                0 15px 40px rgba(0, 229, 255, 0.3),
+                inset 0 0 20px rgba(0, 229, 255, 0.1);
+        }
+
+        .plant-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--text-primary);
+            position: relative;
+            background: var(--gradient-cyber);
+            box-shadow:
+                0 0 30px rgba(0, 229, 255, 0.5),
+                inset 0 0 20px rgba(255, 255, 255, 0.1);
+        }
+
+        .plant-icon::after {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, var(--primary-cyber), var(--accent-pink), var(--neon-green), var(--secondary-purple));
+            border-radius: 50%;
+            z-index: -1;
+            animation: border-rotate 3s linear infinite;
+        }
+
+        .sunflower-icon {
+            background: linear-gradient(135deg, var(--sunflower-cyber), #FFA000);
+        }
+
+        .cactus-icon {
+            background: linear-gradient(135deg, var(--cactus-tech), #0097A7);
+        }
+
+        .strawberry-icon {
+            background: linear-gradient(135deg, var(--strawberry-digital), #C2185B);
+        }
+
+        .dragonfruit-icon {
+            background: linear-gradient(135deg, var(--dragonfruit-vr), #7B1FA2);
+        }
+
+        .plant-name {
+            font-family: var(--font-heading);
+            font-size: var(--text-h3);
+            margin-bottom: 1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .plant-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .plant-stat {
+            background: rgba(0, 229, 255, 0.1);
+            padding: 0.5rem;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid rgba(0, 229, 255, 0.3);
+        }
+
+        .plant-stat-label {
+            font-family: var(--font-cyber);
+            font-size: var(--text-code);
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .plant-stat-value {
+            font-family: var(--font-heading);
+            font-size: var(--text-h3);
+            color: var(--primary-cyber);
+            font-weight: 700;
+        }
+
+        /* 高级技巧 */
+        .advanced-tips {
+            background: linear-gradient(135deg, rgba(124, 77, 255, 0.1) 0%, rgba(0, 229, 255, 0.1) 100%);
+            border: 1px solid var(--secondary-purple);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .advanced-tips::before {
+            content: '';
+            position: absolute;
+            top: -100%;
+            left: -100%;
+            width: 300%;
+            height: 300%;
+            background: radial-gradient(circle, rgba(124, 77, 255, 0.1) 0%, transparent 70%);
+            animation: rotate 20s linear infinite;
+        }
+
+        .advanced-tips h2 {
+            font-family: var(--font-heading);
+            font-size: var(--text-h2);
+            color: var(--secondary-purple);
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 0 20px rgba(124, 77, 255, 0.6);
+        }
+
+        .tips-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .tip-item {
+            background: rgba(10, 14, 39, 0.6);
+            border-left: 3px solid var(--neon-green);
+            padding: 1rem;
+            border-radius: 8px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .tip-item h4 {
+            font-family: var(--font-heading);
+            color: var(--neon-green);
+            margin-bottom: 0.5rem;
+            font-size: var(--text-body);
+            font-weight: 600;
+        }
+
+        .tip-item p {
+            color: var(--text-secondary);
+            font-family: var(--font-body);
+            font-size: var(--text-body);
+            line-height: 1.6;
+        }
+
+        /* 页脚 */
+        .footer {
+            background: linear-gradient(135deg, rgba(21, 26, 58, 0.9) 0%, rgba(10, 14, 39, 0.9) 100%);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 229, 255, 0.3);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-top: 4rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, var(--primary-cyber), var(--accent-pink), var(--neon-green), var(--secondary-purple));
+            border-radius: 16px;
+            z-index: -1;
+            animation: border-rotate 6s linear infinite;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: var(--primary-cyber);
+            text-decoration: none;
+            font-weight: 600;
+            font-family: var(--font-cyber);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .footer-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent-pink);
+            transition: width 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-pink);
+            text-shadow: 0 0 10px rgba(255, 64, 129, 0.8);
+        }
+
+        .footer-links a:hover::after {
+            width: 100%;
+        }
+
+        /* 返回首页链接 */
+        .back-link {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: linear-gradient(135deg, var(--primary-cyber) 0%, var(--secondary-purple) 100%);
+            color: var(--text-primary);
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-family: var(--font-heading);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            z-index: 1000;
+            box-shadow: 0 4px 15px rgba(0, 229, 255, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 229, 255, 0.5);
+        }
+
+        /* 动画效果 */
+        @keyframes scan {
+            0% { left: -100%; }
+            100% { left: 100%; }
+        }
+
+        @keyframes border-rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes gradient-flow {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 968px) {
+            .game-section {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .game-frame-container {
+                min-height: 400px;
+            }
+
+            .game-frame {
+                height: 360px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .nav {
+                padding: 1rem;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .nav-links {
+                justify-content: center;
+                gap: 1rem;
+            }
+
+            .page-title {
+                font-size: var(--text-h2);
+            }
+
+            .page-subtitle {
+                font-size: var(--text-body);
+                padding: 0.8rem 1.5rem;
+            }
+
+            .strategy-grid,
+            .plants-grid,
+            .tips-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .back-link {
+                position: static;
+                display: block;
+                width: fit-content;
+                margin: 1rem auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .game-frame {
+                height: 300px;
+            }
+
+            .plant-stats {
+                grid-template-columns: 1fr;
+                gap: 0.5rem;
+            }
+
+            .footer-links {
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-link">← Back to Home</a>
+
+    <div class="container">
+        <!-- Navigation Bar -->
+        <nav class="nav">
+            <div class="logo">Plants vs Brainrots</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="play.html" style="color: var(--primary-cyber);">Play Game</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Page Title -->
+        <h1 class="page-title">🎮 Game Center</h1>
+        <p class="page-subtitle">
+            Complete Plants vs Brainrots Strategy Guide - From Beginner Basics to Advanced Tactics
+        </p>
+
+        <!-- Game Frame and Controls Section -->
+        <div class="game-section">
+            <div class="game-frame-container">
+                <div class="game-status">🌐 官方游戏平台</div>
+                <iframe
+                    id="gameFrame"
+                    src="https://st.8games.net/7/8g/igra-brejnroty-protiv-rastenij/"
+                    class="game-frame"
+                    allowfullscreen
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    frameborder="0"
+                    onload="onGameFrameLoad()"
+                    onerror="onGameFrameError()">
+                </iframe>
+                <div id="gameFallback" style="display: none; text-align: center; padding: 2rem;">
+                    <h3 style="color: var(--primary-cyber); margin-bottom: 1rem;">🚀 Alternative Game Sources</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
+                        If the game doesn't load, try these alternative platforms:
+                    </p>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
+                        <button class="cyber-btn" onclick="loadAlternativeGame('crazygames')">
+                            🎯 CrazyGames
+                        </button>
+                        <button class="cyber-btn" onclick="loadAlternativeGame('poki')">
+                            🎮 Poki Platform
+                        </button>
+                        <button class="cyber-btn" onclick="loadAlternativeGame('roblox')">
+                            🏗️ Roblox Platform
+                        </button>
+                        <button class="cyber-btn" onclick="loadAlternativeGame('direct')">
+                            🌐 Official Website
+                        </button>
+                    </div>
+                    <div style="background: rgba(255, 64, 129, 0.1); border: 1px solid var(--accent-pink); border-radius: 8px; padding: 1rem;">
+                        <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                            <strong>⚠️ Note:</strong> Some gaming platforms restrict iframe embedding for security.
+                            For the best experience, play directly on our official website or Roblox platform.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-controls">
+                <div class="cyber-card">
+                    <h3>🎮 Quick Actions</h3>
+                    <div style="display: flex; flex-direction: column; gap: 1rem;">
+                        <button class="cyber-btn" onclick="fullscreenGame()">
+                            🖥️ Fullscreen Mode
+                        </button>
+                        <button class="cyber-btn" onclick="restartGame()">
+                            🔄 Restart Game
+                        </button>
+                        <button class="cyber-btn" onclick="toggleSound()">
+                            🔊 Sound Toggle
+                        </button>
+                    </div>
+                </div>
+
+                <div class="cyber-card">
+                    <h3>📊 Game Status</h3>
+                    <div style="display: flex; flex-direction: column; gap: 0.8rem;">
+                        <div>
+                            <span style="color: var(--text-secondary); font-family: var(--font-cyber);">Current Wave:</span>
+                            <span style="color: var(--primary-cyber); font-family: var(--font-heading); font-weight: 700;" id="currentWave">1</span>
+                        </div>
+                        <div>
+                            <span style="color: var(--text-secondary); font-family: var(--font-cyber);">Brainrots Collected:</span>
+                            <span style="color: var(--accent-pink); font-family: var(--font-heading); font-weight: 700;" id="collectedBrainrots">0</span>
+                        </div>
+                        <div>
+                            <span style="color: var(--text-secondary); font-family: var(--font-cyber);">Income Per Second:</span>
+                            <span style="color: var(--neon-green); font-family: var(--font-heading); font-weight: 700;" id="incomePerSecond">0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cyber-card">
+                    <h3>⚙️ Game Settings</h3>
+                    <div style="display: flex; flex-direction: column; gap: 1rem;">
+                        <div>
+                            <label style="color: var(--text-secondary); font-family: var(--font-cyber); font-size: var(--text-code);">Graphics Quality</label>
+                            <select style="width: 100%; background: var(--background-card); color: var(--text-primary); border: 1px solid var(--primary-cyber); border-radius: 8px; padding: 0.5rem; font-family: var(--font-cyber);">
+                                <option value="low">Low Quality</option>
+                                <option value="medium" selected>Medium Quality</option>
+                                <option value="high">High Quality</option>
+                                <option value="ultra">Ultra Quality</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label style="color: var(--text-secondary); font-family: var(--font-cyber); font-size: var(--text-code);">Particle Effects</label>
+                            <select style="width: 100%; background: var(--background-card); color: var(--text-primary); border: 1px solid var(--primary-cyber); border-radius: 8px; padding: 0.5rem; font-family: var(--font-cyber);">
+                                <option value="off">Off</option>
+                                <option value="low" selected>Low</option>
+                                <option value="medium">Medium</option>
+                                <option value="high">High</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Basic Strategy Guide -->
+        <section class="strategy-section">
+            <h2 style="font-family: var(--font-heading); font-size: var(--text-h2); color: var(--primary-cyber); text-align: center; margin-bottom: 2rem; text-transform: uppercase; letter-spacing: 2px;">
+                🎯 Basic Strategy Guide
+            </h2>
+
+            <div class="strategy-grid">
+                <div class="strategy-card">
+                    <h4>🌱 Beginner Basics</h4>
+                    <ul>
+                        <li>Plant sunflowers first to build economic foundation</li>
+                        <li>Place defensive plants at key positions</li>
+                        <li>Collect early Brainrots for initial investment</li>
+                        <li>Understand different plant attack ranges and patterns</li>
+                        <li>Balance economic development and defense building</li>
+                    </ul>
+                </div>
+
+                <div class="strategy-card">
+                    <h4>💰 Economic Management</h4>
+                    <ul>
+                        <li>Establish clear income growth planning</li>
+                        <li>Rational allocation of Brainrots income and upgrades</li>
+                        <li>Prioritize investment in high-income plant positions</li>
+                        <li>Save funds for emergency situations</li>
+                        <li>Regularly evaluate investment return rates</li>
+                    </ul>
+                </div>
+
+                <div class="strategy-card">
+                    <h4>⚡ Advanced Techniques</h4>
+                    <ul>
+                        <li>Master optimal plant placement positions</li>
+                        <li>Understand different Brainrot behavior patterns</li>
+                        <li>Utilize plant combination effects to enhance defense</li>
+                        <li>Perform fusion at appropriate times to create powerful units</li>
+                        <li>Develop long-term upgrade strategies</li>
+                    </ul>
+                </div>
+
+                <div class="strategy-card">
+                    <h4>🏆 Elite Strategies</h4>
+                    <ul>
+                        <li>Optimize income per second for maximum efficiency</li>
+                        <li>Create perfect fusion chain reactions</li>
+                        <li>Master optimal rebirth timing and conditions</li>
+                        <li>Expertly time the use of special plants</li>
+                        <li>Participate in community trading to obtain rare resources</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Plant Database -->
+        <section class="plants-section">
+            <h2 style="font-family: var(--font-heading); font-size: var(--text-h2); color: var(--primary-cyber); text-align: center; margin-bottom: 2rem; text-transform: uppercase; letter-spacing: 2px;">
+                🌱 Plant Database
+            </h2>
+
+            <div class="plants-grid">
+                <div class="plant-card">
+                    <div class="plant-icon sunflower-icon">☀️</div>
+                    <h3 class="plant-name" style="color: var(--sunflower-cyber);">Sunflower</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                        Basic economic plant that continuously generates in-game currency. Each sunflower is a core pillar of your economic system.
+                    </p>
+                    <div class="plant-stats">
+                        <div class="plant-stat">
+                            <div class="plant-stat-label">Attack</div>
+                            <div class="plant-stat-value">10</div>
+                        </div>
+                        <div class="plant-stat">
+                            <div class="plant-stat-label">Production</div>
+                            <div class="plant-stat-value">100</div>
+                        </div>
+                    </div>
+                    <div style="font-family: var(--font-cyber); color: var(--sunflower-cyber); font-size: var(--text-code); text-transform: uppercase; letter-spacing: 1px;">
+                        Rarity: Common
+                    </div>
+                </div>
+
+                <div class="plant-card">
+                    <div class="plant-icon cactus-icon">🌵</div>
+                    <h3 class="plant-name" style="color: var(--cactus-tech);">Cactus</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                        Powerful defensive plant with high health and stable attacks. Suitable for blocking large numbers of invading enemies.
+                    </p>
+                    <div class="plant-stats">
+                        <div class="plant-stat">
+                            <div class="plant-stat-label">Attack</div>
+                            <div class="plant-stat-value">50</div>
+                        </div>
+                        <div class="plant-stat">
+                            <div class="plant-stat-label">Speed</div>
+                            <div class="plant-stat-value">Medium</div>
+                        </div>
+                    </div>
+                    <div style="font-family: var(--font-cyber); color: var(--cactus-tech); font-size: var(--text-code); text-transform: uppercase; letter-spacing: 1px;">
+                        Rarity: Rare
+                    </div>
+                </div>
+
+                <div class="plant-card">
+                    <div class="plant-icon strawberry-icon">🍓</div>
+                    <h3 class="plant-name" style="color: var(--strawberry-digital);">Strawberry</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                        Fast attack plant suitable for dealing with large numbers of weak enemies. Has faster attack speed.
+                    </p>
+                    <div class="plant-stats">
+                        <div class="plant-stat">
+                            <div class="plant-stat-label">Attack</div>
+                            <div class="plant-stat-value">25</div>
+                        </div>
+                        <div class="plant-stat">
+                            <div class="plant-stat-label">Speed</div>
+                            <div class="plant-stat-value">Fast</div>
+                        </div>
+                    </div>
+                    <div style="font-family: var(--font-cyber); color: var(--strawberry-digital); font-size: var(--text-code); text-transform: uppercase; letter-spacing: 1px;">
+                        Rarity: Epic
+                    </div>
+                </div>
+
+                <div class="plant-card">
+                    <div class="plant-icon dragonfruit-icon">🍇</div>
+                    <h3 class="plant-name" style="color: var(--dragonfruit-vr);">Dragon Fruit</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                        Ultimate defensive plant with powerful area attack capabilities. Effectively clears large numbers of enemies.
+                    </p>
+                    <div class="plant-stats">
+                        <div class="plant-stat">
+                            <div class="plant-stat-label">Attack</div>
+                            <div class="plant-stat-value">150</div>
+                        </div>
+                        <div class="plant-stat">
+                            <div class="plant-stat-label">Range</div>
+                            <div class="plant-stat-value">Extra Large</div>
+                        </div>
+                    </div>
+                    <div style="font-family: var(--font-cyber); color: var(--dragonfruit-vr); font-size: var(--text-code); text-transform: uppercase; letter-spacing: 1px;">
+                        Rarity: Legendary
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advanced Tips -->
+        <section class="advanced-tips">
+            <h2>🔥 Pro Player Tips</h2>
+            <div class="tips-grid">
+                <div class="tip-item">
+                    <h4>💡 Fusion Optimization</h4>
+                    <p>Prioritize high-value Brainrots for fusion, calculate input-output ratios, and avoid inefficient fusion. Remember, quality always beats quantity.</p>
+                </div>
+                <div class="tip-item">
+                    <h4>⏱️ Rebirth Timing</h4>
+                    <p>Optimal rebirth timing is after reaching the income plateau, ensuring maximum permanent bonuses. Don't rebirth too early or too late.</p>
+                </div>
+                <div class="tip-item">
+                    <h4>🎯 Position Strategy</h4>
+                    <p>Create "death channels" that guide enemies to concentrated fire zones. Utilize terrain advantages to maximize plant efficiency.</p>
+                </div>
+                <div class="tip-item">
+                    <h4>💰 Economic Cycling</h4>
+                    <p>Establish stable passive income streams, then invest in high-return plants. Avoid putting all resources into single projects.</p>
+                </div>
+                <div class="tip-item">
+                    <h4>🔄 Trading Tips</h4>
+                    <p>Monitor market trends, buy low and sell high. Build reliable trading partnerships to obtain rare Brainrots.</p>
+                </div>
+                <div class="tip-item">
+                    <h4>⚡ Speed Running</h4>
+                    <p>Optimize every operation step, reduce unnecessary waiting times. Master keyboard shortcuts and interface operation techniques.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <div style="text-align: center; margin: 4rem 0;">
+            <h2 style="font-family: var(--font-heading); font-size: var(--text-h2); color: var(--primary-cyber); margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px;">
+                🚀 Ready to Become a Plant Defense Master?
+            </h2>
+            <p style="font-size: var(--text-body); color: var(--text-secondary); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                Now that you've mastered all the necessary strategies and techniques, it's time to prove your skills on the battlefield! Join millions of players and create legends in this world full of challenges and fun.
+            </p>
+            <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+                <button class="cyber-btn" style="font-size: 1.1rem; padding: 15px 30px;" onclick="shareProgress()">
+                    📤 Share Progress
+                </button>
+                <button class="cyber-btn" style="font-size: 1.1rem; padding: 15px 30px; background: linear-gradient(135deg, var(--accent-pink) 0%, var(--secondary-purple) 100%);" onclick="joinCommunity()">
+                    💬 Join Community
+                </button>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-links">
+                <a href="index.html">🏠 Home</a>
+                <a href="about.html">ℹ️ About Us</a>
+                <a href="contact.html">📞 Contact Support</a>
+                <a href="https://discord.gg/plantsvsbrainrots">💬 Discord Community</a>
+            </div>
+            <div style="margin-top: 1.5rem; color: var(--text-muted); font-family: var(--font-cyber); font-size: var(--text-code);">
+                <p>© 2024 Plants vs Brainrots - Cyberpunk Tower Defense Game | All Rights Reserved</p>
+                <p style="margin-top: 0.5rem;">Last Updated: December 1, 2024 | Game Version: v2.1.0</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript Functions -->
+    <script>
+        // Game control functions
+        function fullscreenGame() {
+            const iframe = document.querySelector('.game-frame');
+            if (iframe.requestFullscreen) {
+                iframe.requestFullscreen();
+            } else if (iframe.webkitRequestFullscreen) {
+                iframe.webkitRequestFullscreen();
+            } else if (iframe.msRequestFullscreen) {
+                iframe.msRequestFullscreen();
+            }
+        }
+
+        function restartGame() {
+            const iframe = document.querySelector('.game-frame');
+            iframe.src = iframe.src; // Reload iframe
+        }
+
+        function toggleSound() {
+            alert('Sound control feature is under development...');
+        }
+
+        function shareProgress() {
+            if (navigator.share) {
+                navigator.share({
+                    title: 'Plants vs Brainrots - My Game Progress',
+                    text: 'I made great progress in Plants vs Brainrots! Come play this awesome cyberpunk tower defense game with me!',
+                    url: window.location.href
+                });
+            } else {
+                // Copy to clipboard
+                navigator.clipboard.writeText(window.location.href);
+                alert('Link copied to clipboard!');
+            }
+        }
+
+        function joinCommunity() {
+            window.open('https://discord.gg/plantsvsbrainrots', '_blank');
+        }
+
+        // Game frame error handling and alternative sources
+        function onGameFrameLoad() {
+            console.log('Game frame loaded successfully');
+            const fallback = document.getElementById('gameFallback');
+            if (fallback) {
+                fallback.style.display = 'none';
+            }
+        }
+
+        function onGameFrameError() {
+            console.log('Game frame failed to load');
+            const iframe = document.getElementById('gameFrame');
+            const fallback = document.getElementById('gameFallback');
+
+            if (iframe && fallback) {
+                iframe.style.display = 'none';
+                fallback.style.display = 'block';
+            }
+        }
+
+        function loadAlternativeGame(source) {
+            const iframe = document.getElementById('gameFrame');
+            const fallback = document.getElementById('gameFallback');
+
+            const gameSources = {
+                'crazygames': 'https://www.crazygames.com/embed/plants-vs-zombies-tower-defense',
+                'poki': 'https://poki.com/en/g/plants-vs-zombies',
+                'roblox': 'https://www.roblox.com/games/1234567890/Plants-vs-Brainrots',
+                'yandex': 'https://st.8games.net/7/8g/igra-brejnroty-protiv-rastenij/',
+                'direct': 'about:blank' // Will show instructions
+            };
+
+            if (iframe && gameSources[source]) {
+                if (source === 'direct') {
+                    // Show direct link instructions
+                    showPlayDirectInstructions();
+                } else {
+                    iframe.src = gameSources[source];
+                    iframe.style.display = 'block';
+                    if (fallback) fallback.style.display = 'none';
+
+                    // Add load timeout handler
+                    setTimeout(() => {
+                        try {
+                            // Try to access iframe content to check if it loaded
+                            const contentWindow = iframe.contentWindow;
+                            if (!contentWindow || contentWindow.location.href === 'about:blank') {
+                                onGameFrameError();
+                            }
+                        } catch (e) {
+                            // Cross-origin error is expected - iframe is loading
+                            console.log('Game frame is loading...');
+                        }
+                    }, 5000);
+                }
+            }
+        }
+
+        function showPlayDirectInstructions() {
+            const iframe = document.getElementById('gameFrame');
+            const fallback = document.getElementById('gameFallback');
+
+            if (iframe && fallback) {
+                iframe.style.display = 'none';
+                fallback.style.display = 'block';
+
+                fallback.innerHTML = `
+                    <div style="text-align: center; padding: 2rem;">
+                        <h3 style="color: var(--primary-cyber); margin-bottom: 1rem;">🎮 Plants vs Brainrots</h3>
+                        <div style="max-width: 600px; margin: 0 auto; text-align: left;">
+                            <div style="background: rgba(0, 229, 255, 0.1); border: 1px solid var(--primary-cyber); border-radius: 8px; padding: 1rem; margin-bottom: 1rem;">
+                                <h4 style="color: var(--neon-green); margin-bottom: 0.5rem;">🎯 Most Reliable Option</h4>
+                                <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                                    Play directly on the official Roblox platform for the best experience:
+                                </p>
+                                <button class="cyber-btn" onclick="window.open('https://www.roblox.com/games/1234567890/Plants-vs-Brainrots', '_blank')" style="margin-top: 0.5rem;">
+                                    🏗️ Play on Roblox
+                                </button>
+                            </div>
+
+                            <div style="background: rgba(255, 64, 129, 0.1); border: 1px solid var(--accent-pink); border-radius: 8px; padding: 1rem; margin-bottom: 1rem;">
+                                <h4 style="color: var(--accent-pink); margin-bottom: 0.5rem;">📱 Mobile Gaming</h4>
+                                <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                                    Download our official mobile apps for on-the-go gaming:
+                                </p>
+                                <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 0.5rem;">
+                                    <button class="cyber-btn" onclick="window.open('https://apps.apple.com/app/plants-vs-brainrots', '_blank')">
+                                        🍎 App Store
+                                    </button>
+                                    <button class="cyber-btn" onclick="window.open('https://play.google.com/store/apps/details?id=com.pvbr', '_blank')">
+                                        🤖 Google Play
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div style="background: rgba(118, 255, 3, 0.1); border: 1px solid var(--neon-green); border-radius: 8px; padding: 1rem;">
+                                <h4 style="color: var(--neon-green); margin-bottom: 0.5rem;">🌐 Official Gaming Sites</h4>
+                                <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                                    Try these official gaming platforms that host our game:
+                                </p>
+                                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.5rem; margin-top: 0.5rem;">
+                                    <button class="cyber-btn" onclick="window.open('https://crazygames.com/game/plants-vs-zombies-tower-defense', '_blank')">
+                                        🎯 CrazyGames
+                                    </button>
+                                    <button class="cyber-btn" onclick="window.open('https://poki.com/en/g/plants-vs-zombies', '_blank')">
+                                        🎮 Poki
+                                    </button>
+                                    <button class="cyber-btn" onclick="window.open('https://yandex.com/games/471072', '_blank')">
+                                        🌟 Yandex Games
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div style="background: rgba(124, 77, 255, 0.1); border: 1px solid var(--secondary-purple); border-radius: 8px; padding: 1rem; margin-top: 1.5rem;">
+                                <h4 style="color: var(--secondary-purple); margin-bottom: 0.5rem;">💡 Why Embedding Fails</h4>
+                                <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                                    Many gaming platforms restrict iframe embedding for security and performance reasons.
+                                    This is normal and doesn't affect game quality. Direct platform access provides
+                                    the best gaming experience with full features!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+        }
+
+        // Simulate game status updates
+        let wave = 1;
+        let brainrots = 0;
+        let income = 0;
+
+        function updateGameStats() {
+            // Simulate data updates
+            setInterval(() => {
+                if (Math.random() > 0.7) {
+                    brainrots += Math.floor(Math.random() * 5) + 1;
+                    income += Math.floor(Math.random() * 3) + 1;
+                }
+
+                document.getElementById('currentWave').textContent = wave;
+                document.getElementById('collectedBrainrots').textContent = brainrots;
+                document.getElementById('incomePerSecond').textContent = income;
+            }, 3000);
+        }
+
+        // Initialize after page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            updateGameStats();
+
+            // Add page load animation
+            document.body.style.opacity = '0';
+            setTimeout(() => {
+                document.body.style.transition = 'opacity 0.5s ease-in';
+                document.body.style.opacity = '1';
+            }, 100);
+        });
+
+        // Enhanced scroll effects
+        document.addEventListener('scroll', function() {
+            const scrolled = window.pageYOffset;
+            const parallax = document.querySelector('.advanced-tips');
+            if (parallax) {
+                const speed = 0.5;
+                parallax.style.transform = `translateY(${scrolled * speed}px)`;
+            }
+        });
+    </script>
+</body>
+</html>

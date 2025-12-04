@@ -1,0 +1,28 @@
+# Robots.txt for Plants vs Brainrots Website
+# Generated: December 1, 2024
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://plantsvsbrainrot.co/sitemap.xml
+
+# Allow search engines to crawl all important pages
+Allow: /play
+Allow: /about
+Allow: /contact
+Allow: /strategy
+Allow: /plants-database
+Allow: /faq
+Allow: /updates
+Allow: /community
+
+# Disallow admin or backend files (if any exist in future)
+Disallow: /admin/
+Disallow: /api/private/
+Disallow: /.git/
+Disallow: /_temp/
+Disallow: /logs/
+
+# Crawl delay for respectful crawling
+Crawl-delay: 1

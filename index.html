@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plants vs Brainrots - Ultimate Roblox Tower Defense Game | Play Free Online</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Play Plants vs Brainrots, the ultimate Roblox tower defense game featuring meme-inspired enemies and strategic plant placement. Free online game with strategy guides and tips.">
+    <meta name="keywords" content="Plants vs Brainrots, Roblox tower defense, online strategy game, meme game, plant defense, brainrot enemies, free Roblox game, tower defense strategy">
+    <meta name="author" content="Plants vs Brainrots Official">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Plants vs Brainrots - Ultimate Roblox Tower Defense Game">
+    <meta property="og:description" content="Strategic plant placement meets meme-inspired enemies in this hilarious Roblox tower defense game. Play free online!">
+    <meta property="og:image" content="https://plantsvsbrainrot.co/images/og-image.jpg">
+    <meta property="og:url" content="https://plantsvsbrainrot.co">
+    <meta property="og:type" content="game">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Plants vs Brainrots - Ultimate Roblox Tower Defense Game">
+    <meta name="twitter:description" content="Strategic plant placement meets meme-inspired enemies. Play free online!">
+    <meta name="twitter:image" content="https://plantsvsbrainrot.co/images/twitter-image.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://plantsvsbrainrot.co">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Game",
+      "name": "Plants vs Brainrots",
+      "url": "https://plantsvsbrainrot.co",
+      "description": "Play Plants vs Brainrots, the ultimate Roblox tower defense game featuring meme-inspired enemies and strategic plant placement.",
+      "genre": ["Tower Defense", "Strategy", "Simulation"],
+      "platform": "Roblox",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "15000"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Plants vs Brainrots Team"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Plants vs Brainrots Official"
+      },
+      "applicationCategory": "Game",
+      "operatingSystem": "Web Browser"
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Styles -->
+    <style>
+        :root {
+            /* 主色调 */
+            --primary-cyber: #00E5FF;
+            --secondary-purple: #7C4DFF;
+            --accent-pink: #FF4081;
+            --neon-green: #76FF03;
+
+            /* 背景色系 */
+            --background-dark: #0A0E27;
+            --background-card: #151A3A;
+            --glass-effect: rgba(255, 255, 255, 0.05);
+
+            /* 文字色系 */
+            --text-primary: #FFFFFF;
+            --text-secondary: #B3E5FC;
+            --text-accent: #00E5FF;
+            --text-muted: #64B5F6;
+
+            /* 视觉效果 */
+            --cyber-gradient: linear-gradient(135deg, var(--primary-cyber) 0%, var(--secondary-purple) 100%);
+            --neon-glow: 0 0 20px rgba(0, 229, 255, 0.5);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Rajdhani', sans-serif;
+            background-color: var(--background-dark);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(10, 14, 39, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid rgba(0, 229, 255, 0.3);
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: var(--cyber-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-cyber);
+            background: rgba(0, 229, 255, 0.1);
+            box-shadow: var(--neon-glow);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 80px 0;
+            background: radial-gradient(ellipse at center, rgba(0, 229, 255, 0.15) 0%, transparent 70%);
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .hero h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 900;
+            margin-bottom: 1.5rem;
+            background: var(--cyber-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 8px;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn-play {
+            background: var(--cyber-gradient);
+            color: var(--text-primary);
+            box-shadow: var(--neon-glow);
+        }
+
+        .btn-play:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 25px rgba(0, 229, 255, 0.7);
+        }
+
+        /* Game Section */
+        .game-section {
+            padding: 4rem 0;
+            background: linear-gradient(180deg, transparent 0%, rgba(255, 64, 129, 0.05) 100%);
+        }
+
+        .section-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 3rem;
+            background: var(--cyber-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .game-frame-container {
+            position: relative;
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto 3rem;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(0, 229, 255, 0.2);
+        }
+
+        .game-status {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 229, 255, 0.1);
+            color: var(--primary-cyber);
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: 600;
+            border: 1px solid rgba(0, 229, 255, 0.3);
+            z-index: 10;
+            backdrop-filter: blur(10px);
+        }
+
+        .game-wrapper {
+            position: relative;
+            width: 100%;
+            height: 500px;
+        }
+
+        .game-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('images/002.webp');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            filter: brightness(0.8);
+            z-index: 1;
+        }
+
+        .game-frame {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            z-index: 2;
+        }
+
+        .start-game-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(5px);
+            z-index: 3;
+            transition: opacity 0.3s ease;
+        }
+
+        .start-game-content {
+            text-align: center;
+            color: white;
+            padding: 2rem;
+        }
+
+        .start-game-content h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: var(--cyber-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .start-game-content p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: var(--text-secondary);
+        }
+
+        .start-game-btn {
+            background: var(--cyber-gradient);
+            color: var(--text-primary);
+            border: none;
+            padding: 1rem 3rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border-radius: 50px;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: var(--neon-glow);
+            transition: all 0.3s ease;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .start-game-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 25px rgba(0, 229, 255, 0.7);
+        }
+
+        .start-game-btn:active {
+            transform: translateY(0);
+        }
+
+        .game-started-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 3;
+            padding: 2rem;
+        }
+
+        .game-started-message {
+            text-align: center;
+            color: white;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 2.5rem;
+            border: 1px solid rgba(0, 229, 255, 0.3);
+            max-width: 600px;
+        }
+
+        .game-started-message h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--primary-cyber);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .game-started-message p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: var(--text-secondary);
+        }
+
+        .game-instructions {
+            text-align: left;
+            margin-top: 2rem;
+        }
+
+        .game-instructions h3 {
+            color: var(--neon-green);
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        .game-instructions ol {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            padding-left: 1.5rem;
+        }
+
+        .game-instructions li {
+            margin-bottom: 0.5rem;
+        }
+
+        .game-controls {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .cyber-card {
+            background: var(--background-card);
+            border: 1px solid rgba(0, 229, 255, 0.2);
+            border-radius: 12px;
+            padding: 1.5rem;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .cyber-card:hover {
+            border-color: var(--primary-cyber);
+            box-shadow: var(--neon-glow);
+            transform: translateY(-5px);
+        }
+
+        .cyber-card h3 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: var(--primary-cyber);
+        }
+
+        .cyber-btn {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid rgba(0, 229, 255, 0.3);
+            background: rgba(0, 229, 255, 0.1);
+            color: var(--text-primary);
+            border-radius: 8px;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .cyber-btn:hover {
+            background: var(--cyber-gradient);
+            color: var(--text-primary);
+            border-color: var(--primary-cyber);
+            box-shadow: var(--neon-glow);
+        }
+
+        /* Strategy Section */
+        .strategy-section {
+            padding: 4rem 0;
+        }
+
+        .strategy-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .strategy-card {
+            background: var(--background-card);
+            border: 1px solid rgba(100, 255, 218, 0.2);
+            border-radius: 12px;
+            padding: 2rem;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .strategy-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--neon-green);
+            box-shadow: 0 10px 30px rgba(100, 255, 218, 0.3);
+        }
+
+        .strategy-card h3 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--neon-green);
+        }
+
+        .strategy-card ul {
+            list-style: none;
+        }
+
+        .strategy-card li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-secondary);
+        }
+
+        .strategy-card li:before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: var(--neon-green);
+        }
+
+        /* Features Section */
+        .features-section {
+            padding: 4rem 0;
+            background: linear-gradient(180deg, rgba(124, 77, 255, 0.05) 0%, transparent 100%);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: var(--background-card);
+            border: 1px solid rgba(124, 77, 255, 0.2);
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--cyber-purple);
+            box-shadow: 0 10px 30px rgba(124, 77, 255, 0.3);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card h3 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: var(--cyber-purple);
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 4rem 0;
+        }
+
+        .faq-grid {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--background-card);
+            border: 1px solid rgba(255, 214, 0, 0.2);
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            width: 100%;
+            background: rgba(255, 214, 0, 0.1);
+            border: none;
+            padding: 1.5rem;
+            text-align: left;
+            cursor: pointer;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 600;
+            color: var(--cyber-yellow);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: rgba(255, 214, 0, 0.2);
+        }
+
+        .faq-answer {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            color: var(--text-secondary);
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 1.5rem;
+            max-height: 500px;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--background-card);
+            border-top: 1px solid rgba(0, 229, 255, 0.2);
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .footer-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-cyber);
+        }
+
+        /* Animations */
+        @keyframes glow {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        @keyframes slideInRight {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideOutRight {
+            from {
+                transform: translateX(0);
+                opacity: 1;
+            }
+            to {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+            }
+
+            .game-frame {
+                height: 300px;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">Plants vs Brainrots</div>
+                <ul class="nav-links">
+                    <li><a href="index.html" style="color: var(--primary-cyber);">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="game-section" id="game-section">
+        <div class="container">
+            <h2 class="section-title">🎮 Plants vs Brainrots</h2>
+
+            <!-- Game frame and controls section -->
+            <div class="game-frame-container">
+                <div class="game-status">🌐 Official Gaming Platform</div>
+                <div class="game-wrapper">
+                    <div class="game-background"></div>
+                    <div id="gameStartedContent" class="game-started-content" style="display: none;">
+                        <div class="game-started-message">
+                            <h2>🎯 Game Opened!</h2>
+                            <p>Plants vs Brainrots is now running in a new browser tab.</p>
+                            <div class="game-instructions">
+                                <h3>📋 Next Steps:</h3>
+                                <ol>
+                                    <li>Switch to the game tab in your browser</li>
+                                    <li>Complete the tutorial if you're new</li>
+                                    <li>Start defending your garden from brainrot enemies!</li>
+                                </ol>
+                                <button class="cyber-btn" onclick="startGame()">
+                                    🔄 Open Game Again
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="startGameOverlay" class="start-game-overlay">
+                        <div class="start-game-content">
+                            <h2>🌱 Plants vs Brainrots</h2>
+                            <p>Get ready for the ultimate tower defense adventure!</p>
+                            <button class="start-game-btn" onclick="startGame()">
+                                🚀 START GAME
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div id="gameFallback" style="display: none; text-align: center; padding: 2rem;">
+                    <h3 style="color: var(--primary-cyber); margin-bottom: 1rem;">🚀 Alternative Game Sources</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
+                        If the game doesn't load, try these alternative platforms:
+                    </p>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
+                        <button class="btn" onclick="loadAlternativeGame('roblox')">
+                            🏗️ Roblox Platform
+                        </button>
+                        <button class="btn" onclick="loadAlternativeGame('miniplay')">
+                            🎮 MiniPlay
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-controls">
+                <div class="cyber-card">
+                    <h3>🎮 Quick Actions</h3>
+                    <div style="display: flex; flex-direction: column; gap: 1rem;">
+                        <button class="cyber-btn" onclick="fullscreenGame()">
+                            🖥️ Fullscreen Mode
+                        </button>
+                        <button class="cyber-btn" onclick="restartGame()">
+                            🔄 Restart Game
+                        </button>
+                        <button class="cyber-btn" onclick="toggleSound()">
+                            🔊 Sound Toggle
+                        </button>
+                    </div>
+                </div>
+
+                <div class="cyber-card">
+                    <h3>📊 Game Status</h3>
+                    <div style="display: flex; flex-direction: column; gap: 0.8rem;">
+                        <div>
+                            <span style="color: var(--text-secondary);">Current Wave:</span>
+                            <span style="color: var(--primary-cyber); font-weight: 700;" id="currentWave">1</span>
+                        </div>
+                        <div>
+                            <span style="color: var(--text-secondary);">Brainrots Collected:</span>
+                            <span style="color: var(--accent-pink); font-weight: 700;" id="collectedBrainrots">0</span>
+                        </div>
+                        <div>
+                            <span style="color: var(--text-secondary);">Income Per Second:</span>
+                            <span style="color: var(--neon-green); font-weight: 700;" id="incomePerSecond">0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cyber-card">
+                    <h3>🎯 Game Platform</h3>
+                    <div style="display: flex; flex-direction: column; gap: 1rem;">
+                        <button class="cyber-btn" onclick="shareProgress()">
+                            📱 Share Progress
+                        </button>
+                        <button class="cyber-btn" onclick="joinCommunity()">
+                            👥 Join Community
+                        </button>
+                        <button class="cyber-btn" onclick="window.open('about.html', '_blank')">
+                            📖 Game Guide
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section - Moved below game -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Plants vs Brainrots: The Ultimate Meme-Inspired Tower Defense Adventure</h1>
+            <p>Welcome to <strong>Plants vs Brainrots</strong>, the most innovative and hilarious Roblox tower defense experience that combines strategic gameplay with the wonderful world of internet memes! If you're tired of traditional defense games and ready for something that will make you laugh while challenging your strategic mind, you've come to the right place.</p>
+            <div class="hero-buttons">
+                <a href="#game-section" class="btn btn-play">PLAY NOW - Your Garden Awaits!</a>
+                <a href="about.html" class="btn" style="background: linear-gradient(135deg, var(--accent-pink) 0%, var(--neon-green) 100%);">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategy Guide Section -->
+    <section class="strategy-section">
+        <div class="container">
+            <h2 class="section-title">🎯 Strategy Guide</h2>
+            <div class="strategy-grid">
+                <div class="strategy-card">
+                    <h3>🌱 Beginner Basics</h3>
+                    <ul>
+                        <li>Prioritize upgrading sunflowers and dual shooters</li>
+                        <li>Arrange defensive lines wisely - front row defense, back row damage</li>
+                        <li>Collect brainrots to unlock stronger plants</li>
+                        <li>Observe enemy types and place plants strategically</li>
+                    </ul>
+                </div>
+
+                <div class="strategy-card">
+                    <h3>💡 Advanced Techniques</h3>
+                    <ul>
+                        <li>Master optimal timing for plant placement</li>
+                        <li>Understand weaknesses and resistances of different brainrots</li>
+                        <li>Use special abilities and items wisely</li>
+                        <li>Optimize economy by balancing plant purchases and upgrades</li>
+                    </ul>
+                </div>
+
+                <div class="strategy-card">
+                    <h3>🏆 Competitive Strategies</h3>
+                    <ul>
+                        <li>Quick start to establish early advantage</li>
+                        <li>Mid-game transition to handle different challenges</li>
+                        <li>Late-game defense to hold the final wave</li>
+                        <li>Observe opponent strategies and adjust tactics flexibly</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">🌟 Game Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🌱</div>
+                    <h3>Unique Plant System</h3>
+                    <p>40+ different plants with unique abilities and upgrade paths</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🧠</div>
+                    <h3>Brainrot Enemies</h3>
+                    <p>20+ meme-inspired brainrot enemies with different attack patterns and weaknesses</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🎮</div>
+                    <h3>Strategic Gameplay</h3>
+                    <p>Deep strategy system requiring resource planning, plant placement, and upgrade timing</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🌟</div>
+                    <h3>Upgrade System</h3>
+                    <p>Comprehensive plant upgrade and evolution system to build your ultimate defense</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>Multiplayer Mode</h3>
+                    <p>Supports multiplayer cooperation and competition - defend or battle with friends</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Beautiful Graphics</h3>
+                    <p>Stunning 3D graphics built on Roblox platform with smooth animations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">📋 Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        What is Plants vs Brainrots?
+                        <span>+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Plants vs Brainrots is an innovative tower defense game on the Roblox platform that combines classic Plants vs Zombies gameplay with modern internet meme culture. Players need to plant various defenders to resist invading brainrot enemies.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        How to start playing?
+                        <span>+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>1. Make sure you have a Roblox account<br>
+                        2. Click the "PLAY NOW" button on the game page<br>
+                        3. Launch the game on the Roblox platform<br>
+                        4. Complete the tutorial to begin your adventure</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        Is the game free?
+                        <span>+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! Plants vs Brainrots is completely free to play. There are optional cosmetic items in the game, but they don't affect game balance.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        Which platforms are supported?
+                        <span>+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The game supports multiple platforms including PC, Mac, iOS, Android, and Xbox One. As long as you can run Roblox, you can enjoy Plants vs Brainrots.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <p>&copy; 2024 Plants vs Brainrots. All rights reserved.</p>
+                </div>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 游戏控制函数
+        function fullscreenGame() {
+            const iframe = document.getElementById('gameFrame');
+            if (iframe.requestFullscreen) {
+                iframe.requestFullscreen();
+            } else if (iframe.webkitRequestFullscreen) {
+                iframe.webkitRequestFullscreen();
+            } else if (iframe.msRequestFullscreen) {
+                iframe.msRequestFullscreen();
+            }
+        }
+
+        function restartGame() {
+            const iframe = document.getElementById('gameFrame');
+            iframe.src = iframe.src; // Reload iframe to restart the game
+            showNotification('🔄 Game restarted!');
+        }
+
+        function toggleSound() {
+            // This feature needs to be implemented according to the actual game API
+            showNotification('🔊 Sound control needs to be set in the game');
+        }
+
+        function startGame() {
+            const overlay = document.getElementById('startGameOverlay');
+            const startedContent = document.getElementById('gameStartedContent');
+            const status = document.querySelector('.game-status');
+
+            // Hide overlay and show started content
+            overlay.style.opacity = '0';
+            setTimeout(() => {
+                overlay.style.display = 'none';
+                startedContent.style.display = 'flex';
+            }, 300);
+
+            // Update status
+            status.innerHTML = '🎮 Opening game in new tab...';
+            status.style.background = 'rgba(0, 229, 255, 0.2)';
+            status.style.borderColor = 'rgba(0, 229, 255, 0.5)';
+
+            // Open game in new tab
+            window.open('https://yandex.com/games/app/471072?utm_source=distrib', '_blank');
+
+            // Show success status after delay
+            setTimeout(() => {
+                status.innerHTML = '🎯 Game opened! Check your browser tabs';
+                status.style.background = 'rgba(46, 204, 113, 0.2)';
+                status.style.borderColor = 'rgba(46, 204, 113, 0.5)';
+            }, 1000);
+
+            showNotification('🚀 Game opened in new tab! Enjoy playing Plants vs Brainrots!');
+
+            // Show alternative platform options after delay
+            setTimeout(() => {
+                const fallback = document.getElementById('gameFallback');
+                if (fallback) {
+                    fallback.style.display = 'block';
+                }
+            }, 2000);
+        }
+
+        function shareProgress() {
+            if (navigator.share) {
+                navigator.share({
+                    title: 'Plants vs Brainrots - My Game Progress',
+                    text: 'I made great progress in Plants vs Brainrots!',
+                    url: window.location.href
+                }).catch(err => console.log('Share cancelled'));
+            } else {
+                // Copy link to clipboard
+                navigator.clipboard.writeText(window.location.href).then(() => {
+                    showNotification('🔗 Game link copied to clipboard!');
+                });
+            }
+        }
+
+        function joinCommunity() {
+            // Link to Discord, Reddit or other communities
+            window.open('https://discord.gg/plantsvsbrainrots', '_blank');
+        }
+
+        function loadAlternativeGame(platform) {
+            const alternatives = {
+                'roblox': 'https://www.roblox.com/games/127742093697776/Plants-Vs-Brainrots',
+                'miniplay': 'https://www.miniplay.com/embed/plants-vs-brainrot-zombies'
+            };
+
+            if (alternatives[platform]) {
+                window.open(alternatives[platform], '_blank');
+                showNotification(`🚀 Opening ${platform.toUpperCase()} platform...`);
+            }
+        }
+
+        function onGameFrameLoad() {
+            const status = document.querySelector('.game-status');
+            if (status) {
+                status.innerHTML = '🟢 Game loaded - Click to start playing';
+                status.style.background = 'rgba(46, 204, 113, 0.2)';
+                status.style.borderColor = 'rgba(46, 204, 113, 0.5)';
+            }
+        }
+
+        function onGameFrameError() {
+            const status = document.querySelector('.game-status');
+            const fallback = document.getElementById('gameFallback');
+            if (status) {
+                status.innerHTML = '⚠️ Game failed to load - Trying alternative links';
+                status.style.background = 'rgba(231, 76, 60, 0.2)';
+                status.style.borderColor = 'rgba(231, 76, 60, 0.5)';
+            }
+            if (fallback) {
+                fallback.style.display = 'block';
+            }
+        }
+
+        function showNotification(message) {
+            // Create notification element
+            const notification = document.createElement('div');
+            notification.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: rgba(46, 204, 113, 0.9);
+                color: white;
+                padding: 15px 20px;
+                border-radius: 8px;
+                font-weight: 600;
+                z-index: 9999;
+                animation: slideInRight 0.3s ease, slideOutRight 0.3s ease 2.7s;
+                box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            `;
+            notification.textContent = message;
+            document.body.appendChild(notification);
+
+            // Auto-remove after 3 seconds
+            setTimeout(() => {
+                if (notification.parentNode) {
+                    notification.parentNode.removeChild(notification);
+                }
+            }, 3000);
+        }
+
+        function toggleFaq(button) {
+            const faqItem = button.parentElement;
+            const answer = button.nextElementSibling;
+            const span = button.querySelector('span');
+
+            faqItem.classList.toggle('active');
+
+            if (faqItem.classList.contains('active')) {
+                span.textContent = '-';
+            } else {
+                span.textContent = '+';
+            }
+        }
+
+        // Simulate game statistics update
+        function updateGameStats() {
+            setInterval(() => {
+                // Randomly update some statistics
+                const waveEl = document.getElementById('currentWave');
+                const brainrotsEl = document.getElementById('collectedBrainrots');
+                const incomeEl = document.getElementById('incomePerSecond');
+
+                if (waveEl) {
+                    const currentWave = parseInt(waveEl.textContent);
+                    if (Math.random() > 0.95 && currentWave < 50) {
+                        waveEl.textContent = currentWave + 1;
+                    }
+                }
+
+                if (brainrotsEl) {
+                    const currentBrainrots = parseInt(brainrotsEl.textContent);
+                    if (Math.random() > 0.9) {
+                        brainrotsEl.textContent = currentBrainrots + Math.floor(Math.random() * 5);
+                    }
+                }
+
+                if (incomeEl) {
+                    const currentIncome = parseInt(incomeEl.textContent);
+                    if (Math.random() > 0.92 && currentIncome < 999) {
+                        incomeEl.textContent = currentIncome + Math.floor(Math.random() * 10);
+                    }
+                }
+            }, 2000);
+        }
+
+        // Initialize after page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            updateGameStats();
+
+            // Smooth scrolling
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Scroll animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -100px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all cards
+            document.querySelectorAll('.cyber-card, .strategy-card, .feature-card, .faq-item').forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(card);
+            });
+        });
+
+        // Bind global functions to window object for HTML calls
+        window.fullscreenGame = fullscreenGame;
+        window.restartGame = restartGame;
+        window.toggleSound = toggleSound;
+        window.startGame = startGame;
+        window.shareProgress = shareProgress;
+        window.joinCommunity = joinCommunity;
+        window.loadAlternativeGame = loadAlternativeGame;
+        window.onGameFrameLoad = onGameFrameLoad;
+        window.onGameFrameError = onGameFrameError;
+        window.toggleFaq = toggleFaq;
+    </script>
+</body>
+</html>
